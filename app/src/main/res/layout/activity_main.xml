@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/egg"
+        android:layout_below="@id/seekBar"
+        android:id="@+id/imageOf"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:30"
+        android:textSize="70dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/timerText"/>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="GO!"
+    android:textSize="40dp"
+    android:layout_below="@+id/timerText"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    android:id="@+id/controller"
+    android:onClick="startStopTimer"/>
+
+</RelativeLayout>
